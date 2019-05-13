@@ -1,0 +1,349 @@
+object FAlteracaoSemResultado: TFAlteracaoSemResultado
+  Left = 56
+  Top = 166
+  Caption = 'ALTERAR JOGO SEM RESULTADO'
+  ClientHeight = 513
+  ClientWidth = 1030
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Icon.Data = {
+    0000010001002020100000000000E80200001600000028000000200000004000
+    0000010004000000000080020000000000000000000000000000000000000000
+    000000008000008000000080800080000000800080008080000080808000C0C0
+    C0000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000B3B3B3B33330000BB3B3000000000B3B3B3B3333333030BB3303300000003
+    3330000000000030BB0B3B3330000003333B8B8383333033BBBB333330000000
+    3333333333330B3B3BB33B3B3B0000000B3B3B3333330B3B33B3BBB3330000B3
+    B3B3B3B333330B3B333BBB333B0003333000000000000B3B33BBBBB3B3000300
+    000B3B3B33330B3B333BB0B33B000030B3B3B3B3B3330B3B333BBBB3B3000303
+    3333333333330B33333BBB3B3B000003000B888383830BB33333333BB0000000
+    33330000000000B33B3333BB300000033000B3B3B3B3B0BB33330BBB00000000
+    0B3B3B3B3B3B3B0BB33B3BB00000000033333333333333300B33330000000000
+    3000BBB838383830003000000000000003333380000000000000000000000000
+    3338000B3B3B3B3B3B000000000000000330B3B3B3B3B3B3B3B3300000000000
+    0003333FFFFFF33333333300000000000003088BBBB3B3B3B300030000000000
+    000033333BBBBB3B3B33300000000000000333B3B3BBBBB3B3B3330000000000
+    0000333B3BBBBBBB333330000000000000000003B3B3BFFFFB00000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    000000000000000000000000000000000000000000000000000000000000FFFF
+    FFFFFE003C1FF000000FE0000007C0000003C0000003C0000001C00000018000
+    00010000000100000001000000010000000180000003C0000003C0000007E000
+    000FE000001FE00000FFE00000FFE000007FF000003FF800001FFC00001FFC00
+    001FFC00001FFE00003FFF00007FFFE003FFFFFFFFFFFFFFFFFFFFFFFFFF}
+  OldCreateOrder = False
+  Position = poScreenCenter
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 4
+    Top = 2
+    Width = 320
+    Height = 20
+    Caption = 'JOGOS INCLU'#205'DOS SEM RESULTADO'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clGreen
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 2
+    Top = 34
+    Width = 1020
+    Height = 20
+    Caption = 
+      'Secione um jogo na tabela  - com CLICK do mouse (linha fica na c' +
+      'or VERMELHA) e altere o resultado ou exclua esse(s) jogo(s)'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -16
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Panel52: TPanel
+    Left = 4
+    Top = 60
+    Width = 237
+    Height = 93
+    BorderStyle = bsSingle
+    TabOrder = 1
+    object Label34: TLabel
+      Left = 6
+      Top = 4
+      Width = 210
+      Height = 16
+      Caption = 'Selecione o resultado do jogo'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clGreen
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object RadioGroupResultado: TRadioGroup
+      Left = 4
+      Top = 21
+      Width = 89
+      Height = 66
+      Caption = 'Time'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clNavy
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      ItemIndex = 2
+      Items.Strings = (
+        'A'
+        'B'
+        'Empate')
+      ParentFont = False
+      TabOrder = 0
+    end
+    object BitBtnAlterar: TBitBtn
+      Left = 109
+      Top = 38
+      Width = 120
+      Height = 38
+      Caption = 'Alterar'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      Font.Style = [fsBold]
+      Glyph.Data = {
+        76010000424D7601000000000000760000002800000020000000100000000100
+        04000000000000010000120B0000120B00001000000000000000000000000000
+        800000800000008080008000000080008000808000007F7F7F00BFBFBF000000
+        FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333000000
+        000033333377777777773333330FFFFFFFF03FF3FF7FF33F3FF700300000FF0F
+        00F077F777773F737737E00BFBFB0FFFFFF07773333F7F3333F7E0BFBF000FFF
+        F0F077F3337773F3F737E0FBFBFBF0F00FF077F3333FF7F77F37E0BFBF00000B
+        0FF077F3337777737337E0FBFBFBFBF0FFF077F33FFFFFF73337E0BF0000000F
+        FFF077FF777777733FF7000BFB00B0FF00F07773FF77373377373330000B0FFF
+        FFF03337777373333FF7333330B0FFFF00003333373733FF777733330B0FF00F
+        0FF03333737F37737F373330B00FFFFF0F033337F77F33337F733309030FFFFF
+        00333377737FFFFF773333303300000003333337337777777333}
+      NumGlyphs = 2
+      ParentFont = False
+      TabOrder = 1
+      OnClick = BitBtnInserirClick
+    end
+  end
+  object btnFiltrar: TBitBtn
+    Left = 265
+    Top = 64
+    Width = 176
+    Height = 38
+    Cancel = True
+    Caption = 'Excluir selecionado'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    Glyph.Data = {
+      DE010000424DDE01000000000000760000002800000024000000120000000100
+      0400000000006801000000000000000000001000000000000000000000000000
+      80000080000000808000800000008000800080800000C0C0C000808080000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      333333333333333333333333000033338833333333333333333F333333333333
+      0000333911833333983333333388F333333F3333000033391118333911833333
+      38F38F333F88F33300003339111183911118333338F338F3F8338F3300003333
+      911118111118333338F3338F833338F3000033333911111111833333338F3338
+      3333F8330000333333911111183333333338F333333F83330000333333311111
+      8333333333338F3333383333000033333339111183333333333338F333833333
+      00003333339111118333333333333833338F3333000033333911181118333333
+      33338333338F333300003333911183911183333333383338F338F33300003333
+      9118333911183333338F33838F338F33000033333913333391113333338FF833
+      38F338F300003333333333333919333333388333338FFF830000333333333333
+      3333333333333333333888330000333333333333333333333333333333333333
+      0000}
+    NumGlyphs = 2
+    ParentFont = False
+    TabOrder = 0
+    OnClick = btnFiltrarClick
+  end
+  object BitBtn2: TBitBtn
+    Left = 265
+    Top = 112
+    Width = 176
+    Height = 38
+    Cancel = True
+    Caption = 'Excluir tudo'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    Font.Style = [fsBold]
+    Glyph.Data = {
+      DE010000424DDE01000000000000760000002800000024000000120000000100
+      0400000000006801000000000000000000001000000000000000000000000000
+      80000080000000808000800000008000800080800000C0C0C000808080000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00333333333333
+      333333333333333333333333000033338833333333333333333F333333333333
+      0000333911833333983333333388F333333F3333000033391118333911833333
+      38F38F333F88F33300003339111183911118333338F338F3F8338F3300003333
+      911118111118333338F3338F833338F3000033333911111111833333338F3338
+      3333F8330000333333911111183333333338F333333F83330000333333311111
+      8333333333338F3333383333000033333339111183333333333338F333833333
+      00003333339111118333333333333833338F3333000033333911181118333333
+      33338333338F333300003333911183911183333333383338F338F33300003333
+      9118333911183333338F33838F338F33000033333913333391113333338FF833
+      38F338F300003333333333333919333333388333338FFF830000333333333333
+      3333333333333333333888330000333333333333333333333333333333333333
+      0000}
+    NumGlyphs = 2
+    ParentFont = False
+    TabOrder = 2
+    OnClick = BitBtn2Click
+  end
+  object Panel5: TPanel
+    Left = 8
+    Top = 170
+    Width = 54
+    Height = 45
+    BevelKind = bkSoft
+    Caption = 'VIT'#211'RIA'
+    Color = 12189695
+    ParentBackground = False
+    TabOrder = 3
+  end
+  object Panel7: TPanel
+    Left = 60
+    Top = 170
+    Width = 436
+    Height = 24
+    BevelKind = bkSoft
+    Caption = 'TIME A'
+    Color = 12189695
+    ParentBackground = False
+    TabOrder = 4
+  end
+  object Panel6: TPanel
+    Left = 60
+    Top = 191
+    Width = 146
+    Height = 24
+    BevelKind = bkSoft
+    Caption = 'CASA 1'
+    Color = 12189695
+    ParentBackground = False
+    TabOrder = 5
+  end
+  object Panel8: TPanel
+    Left = 205
+    Top = 191
+    Width = 146
+    Height = 24
+    BevelKind = bkSoft
+    Caption = 'CAS A2'
+    Color = 12189695
+    ParentBackground = False
+    TabOrder = 6
+  end
+  object Panel9: TPanel
+    Left = 350
+    Top = 191
+    Width = 146
+    Height = 24
+    BevelKind = bkSoft
+    Caption = 'CAS A3'
+    Color = 12189695
+    ParentBackground = False
+    TabOrder = 7
+  end
+  object Panel10: TPanel
+    Left = 494
+    Top = 170
+    Width = 434
+    Height = 24
+    BevelKind = bkSoft
+    Caption = 'TIME A'
+    Color = 12189695
+    ParentBackground = False
+    TabOrder = 8
+  end
+  object Panel12: TPanel
+    Left = 494
+    Top = 191
+    Width = 146
+    Height = 24
+    BevelKind = bkSoft
+    Caption = 'CASA 1'
+    Color = 12189695
+    ParentBackground = False
+    TabOrder = 9
+  end
+  object Panel13: TPanel
+    Left = 638
+    Top = 191
+    Width = 146
+    Height = 24
+    BevelKind = bkSoft
+    Caption = 'CAS A2'
+    Color = 12189695
+    ParentBackground = False
+    TabOrder = 10
+  end
+  object Panel14: TPanel
+    Left = 782
+    Top = 191
+    Width = 146
+    Height = 24
+    BevelKind = bkSoft
+    Caption = 'CAS A3'
+    Color = 12189695
+    ParentBackground = False
+    TabOrder = 11
+  end
+  object StringGrid1: TStringGrid
+    Left = 8
+    Top = 214
+    Width = 1017
+    Height = 215
+    ColCount = 9
+    DefaultRowHeight = 18
+    DefaultDrawing = False
+    FixedCols = 0
+    RowCount = 13
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRowSelect]
+    ScrollBars = ssVertical
+    TabOrder = 12
+    OnClick = StringGrid1Click
+    OnDrawCell = StringGrid1DrawCell
+    ColWidths = (
+      51
+      144
+      143
+      144
+      141
+      144
+      143
+      84
+      64)
+  end
+  object Panel1: TPanel
+    Left = 928
+    Top = 170
+    Width = 54
+    Height = 45
+    BevelKind = bkSoft
+    Caption = 'Id'
+    Color = 12189695
+    ParentBackground = False
+    TabOrder = 13
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 588
+    Top = 96
+  end
+end

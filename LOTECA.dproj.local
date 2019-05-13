@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2016/10/18 10:06:58.000.828,=E:\DESENV\SISTEMAS\LOTECA\Fontes versao 7\UAnalisePartida.pas</Transaction>
+    <Transaction>2016/10/18 11:10:38.000.565,E:\DESENV\SISTEMAS\LOTECA\Fontes versao 7\UAnalisePartida.pas=</Transaction>
+    <Transaction>2016/10/18 16:57:01.000.481,=E:\DESENV\SISTEMAS\LOTECA\Fontes versao 7\UAnalisePartida.pas</Transaction>
+    <Transaction>2017/02/01 11:34:37.000.513,=E:\DESENV\SISTEMAS\LOTECA\Fontes versao 9\UAnalisePadroes.pas</Transaction>
+    <Transaction>2017/03/08 18:16:04.000.894,=E:\DESENV\SISTEMAS\LOTECA\Fontes versao 9\UConsultaPartida.pas</Transaction>
+    <Transaction>2017/03/29 13:44:57.000.723,=E:\DESENV\SISTEMAS\LOTECA\Fontes versao 10\UAlteracaoPartidaSemResultado.pas</Transaction>
+    <Transaction>2017/04/17 20:07:36.000.555,=E:\DESENV\SISTEMAS\LOTECA\Fontes versao 10 - Beta\UJogoCartasAuto01.pas</Transaction>
+    <Transaction>2017/04/19 07:44:07.000.465,=E:\DESENV\SISTEMAS\LOTECA\Fontes versao 11\UInformarPartida.pas</Transaction>
+    <Transaction>2017/04/19 08:37:20.000.485,=E:\DESENV\SISTEMAS\LOTECA\Fontes versao 11\UInformarTimeB.pas</Transaction>
+    <Transaction>2017/04/19 11:26:36.000.648,E:\DESENV\SISTEMAS\LOTECA\Fontes versao 11\UInformarTimeB.pas=</Transaction>
+    <Transaction>2017/04/19 17:24:14.000.262,=E:\DESENV\SISTEMAS\LOTECA\Fontes versao 11\UJogoCartasAuto02.pas</Transaction>
+    <Transaction>2019/02/04 17:25:12.000.361,D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UConsulta.pas=</Transaction>
+    <Transaction>2019/02/04 17:25:12.000.393,D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UAnalisePadroes.pas=</Transaction>
+    <Transaction>2019/02/04 17:25:12.000.191,D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UConsultaPartida.pas=</Transaction>
+    <Transaction>2019/02/04 17:25:12.000.408,D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UAlteracaoPartidaSemResultado.pas=</Transaction>
+    <Transaction>2019/02/04 17:25:12.000.415,D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UAlteracao.pas=</Transaction>
+    <Transaction>2019/02/04 17:25:12.000.400,D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UAlteracaoSemResultado.pas=</Transaction>
+    <Transaction>2019/02/04 17:25:12.000.385,D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UAnalisePartida.pas=</Transaction>
+    <Transaction>2019/02/06 12:42:52.000.818,D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UJogoCartasAuto02.pas=</Transaction>
+    <Transaction>2019/02/06 12:42:52.000.882,D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UJogoCartas.pas=</Transaction>
+    <Transaction>2019/02/06 12:42:52.000.876,D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UJogoCartasAuto01.pas=</Transaction>
+    <Transaction>2019/02/06 12:44:41.000.212,D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UInformarPartida.pas=</Transaction>
+    <Transaction>2019/02/06 12:44:41.000.206,D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UInformarTime.pas=</Transaction>
+    <Transaction>2019/02/06 16:57:05.000.520,=D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UAlteracao.pas</Transaction>
+    <Transaction>2019/02/06 17:21:45.000.383,=D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UAlteracaoPartidaSemResultado.pas</Transaction>
+    <Transaction>2019/02/06 17:38:25.000.965,=D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UConsulta.pas</Transaction>
+    <Transaction>2019/02/06 17:38:26.000.128,=D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UConsultaPartida.pas</Transaction>
+    <Transaction>2019/02/06 17:39:27.000.958,=D:\Adriana\DESENV\SISTEMAS\LOTECA\Fontes versao 2019.01\UAlteracaoSemResultado.pas</Transaction>
+  </Transactions>
+</BorlandProject>
