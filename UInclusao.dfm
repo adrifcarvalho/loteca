@@ -454,7 +454,7 @@ object FInclusao: TFInclusao
       OnClick = BitBtnInserirClick
     end
   end
-  object StringGrid1: TStringGrid
+  object SG1: TStringGrid
     Left = 578
     Top = 82
     Width = 311
@@ -471,14 +471,14 @@ object FInclusao: TFInclusao
       38
       30
       31
-      32
+      216
       31
       27
       26)
   end
-  object StringGrid2: TStringGrid
+  object SG2: TStringGrid
     Left = 578
-    Top = 104
+    Top = 108
     Width = 311
     Height = 20
     ColCount = 8
@@ -493,7 +493,7 @@ object FInclusao: TFInclusao
       38
       30
       31
-      32
+      31
       31
       27
       26)
@@ -1020,7 +1020,7 @@ object FInclusao: TFInclusao
       end
       object StringGrid03: TStringGrid
         Left = 2
-        Top = 44
+        Top = 43
         Width = 936
         Height = 195
         ColCount = 8
@@ -1139,7 +1139,7 @@ object FInclusao: TFInclusao
       end
     end
   end
-  object StringGrid3: TStringGrid
+  object SG3: TStringGrid
     Left = 578
     Top = 130
     Width = 311

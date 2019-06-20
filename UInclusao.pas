@@ -40,8 +40,8 @@ type
     BitBtnInserir: TBitBtn;
     BitBtnLimpar: TBitBtn;
     FDGUIxWaitCursor1: TFDGUIxWaitCursor;
-    StringGrid1: TStringGrid;
-    StringGrid2: TStringGrid;
+    SG1: TStringGrid;
+    SG2: TStringGrid;
     FDQuery1: TFDQuery;
     FDQuery2: TFDQuery;
     FDQuery1Count: TFDQuery;
@@ -99,7 +99,7 @@ type
     Panel27: TPanel;
     StringGrid03: TStringGrid;
     Panel28: TPanel;
-    StringGrid3: TStringGrid;
+    SG3: TStringGrid;
     FDQuery3: TFDQuery;
     FDQuery3Count: TFDQuery;
     Panel29: TPanel;
@@ -175,20 +175,20 @@ begin
          StringGrid03.Cells[liCol,liLin] := '';
    StringGrid03.RowCount := 1;
 
-   for liLin := 0 to StringGrid1.RowCount-1 do
-      for liCol := 0 to StringGrid1.ColCount-1 do
-         StringGrid1.Cells[liCol,liLin] := '';
-   StringGrid1.RowCount := 1;
+   for liLin := 0 to SG1.RowCount-1 do
+      for liCol := 0 to SG1.ColCount-1 do
+         SG1.Cells[liCol,liLin] := '';
+   SG1.RowCount := 1;
 
-   for liLin := 0 to StringGrid2.RowCount-1 do
-      for liCol := 0 to StringGrid2.ColCount-1 do
-         StringGrid2.Cells[liCol,liLin] := '';
-   StringGrid2.RowCount := 1;
+   for liLin := 0 to SG2.RowCount-1 do
+      for liCol := 0 to SG2.ColCount-1 do
+         SG2.Cells[liCol,liLin] := '';
+   SG2.RowCount := 1;
 
-   for liLin := 0 to StringGrid3.RowCount-1 do
-      for liCol := 0 to StringGrid3.ColCount-1 do
-         StringGrid3.Cells[liCol,liLin] := '';
-   StringGrid3.RowCount := 1;
+   for liLin := 0 to SG3.RowCount-1 do
+      for liCol := 0 to SG3.ColCount-1 do
+         SG3.Cells[liCol,liLin] := '';
+   SG3.RowCount := 1;
 end;
 
 procedure TFInclusao.CarregarCombos;
@@ -609,10 +609,10 @@ var liLin, liCol: integer;
     liQtdVitoria, liQtdDerrota,liQtdEmpate, liTotal: real;
     lsSQL: string;
 begin
-   for liLin := 0 to StringGrid1.RowCount-1 do
-      for liCol := 0 to StringGrid1.ColCount-1 do
-         StringGrid1.Cells[liCol,liLin] := '';
-   StringGrid1.RowCount := 1;
+   for liLin := 0 to SG1.RowCount-1 do
+      for liCol := 0 to SG1.ColCount-1 do
+         SG1.Cells[liCol,liLin] := '';
+   SG1.RowCount := 1;
 
    //PADRÃO 1: Todos os arcanos menores (casa 1, 2 e 3) iguais
    try
@@ -650,7 +650,7 @@ begin
       begin
          PreencherGridTela(StringGrid01, FDQuery1);
          //Preenche o StringGrid que define quais campos serão pintados
-         PreencherStringGrid01(StringGrid01, StringGrid1);
+         PreencherStringGrid01(StringGrid01, SG1);
          FDQuery1.Next;
       end;
 
@@ -730,10 +730,10 @@ var liQtdVitoria, liQtdDerrota,liQtdEmpate, liTotal: real;
     lsSQL: string;
     liLin, liCol: integer;
 begin
-   for liLin := 0 to StringGrid2.RowCount-1 do
-      for liCol := 0 to StringGrid2.ColCount-1 do
-         StringGrid2.Cells[liCol,liLin] := '';
-   StringGrid2.RowCount := 1;
+   for liLin := 0 to SG2.RowCount-1 do
+      for liCol := 0 to SG2.ColCount-1 do
+         SG2.Cells[liCol,liLin] := '';
+   SG2.RowCount := 1;
    try
       FDQuery2.Close;
       case RadioGroupTime.ItemIndex of
@@ -777,7 +777,7 @@ begin
    begin
       PreencherGridTela(StringGrid02, FDQuery2);
       //Preenche o StringGrid que define quais campos serão pintados
-      PreencherStringGrid02(StringGrid02, StringGrid2);
+      PreencherStringGrid02(StringGrid02, SG2);
       FDQuery2.Next;
    end;
 
@@ -864,10 +864,10 @@ var liQtdVitoria, liQtdDerrota,liQtdEmpate, liTotal: real;
     lsSQL: string;
     liLin, liCol: integer;
 begin
-   for liLin := 0 to StringGrid3.RowCount-1 do
-      for liCol := 0 to StringGrid3.ColCount-1 do
-         StringGrid3.Cells[liCol,liLin] := '';
-   StringGrid3.RowCount := 1;
+   for liLin := 0 to SG3.RowCount-1 do
+      for liCol := 0 to SG3.ColCount-1 do
+         SG3.Cells[liCol,liLin] := '';
+   SG3.RowCount := 1;
 
    try
       FDQuery3.Close;
@@ -916,7 +916,7 @@ begin
    begin
       PreencherGridTela(StringGrid03, FDQuery3);
       //Preenche o StringGrid que define quais campos serão pintados
-      PreencherStringGrid03(StringGrid03, StringGrid3);
+      PreencherStringGrid03(StringGrid03, SG3);
       FDQuery3.Next;
    end;
 
@@ -2251,13 +2251,13 @@ begin
    StringGrid01.Canvas.Font.Color := clBlack;
    StringGrid01.Canvas.Brush.Color := clWhite;
 
-   if (StringGrid1.Cells[ACol, ARow] = 'X') then
+   if (SG1.Cells[ACol, ARow] = 'X') then
       StringGrid01.Canvas.Brush.Color := $00A8FFFF;
 
-   if (StringGrid1.Cells[ACol, ARow] = 'Y') then
+   if (SG1.Cells[ACol, ARow] = 'Y') then
       StringGrid01.Canvas.Brush.Color := $00FFC993;
 
-   if (StringGrid1.Cells[ACol, ARow] = 'Z') then
+   if (SG1.Cells[ACol, ARow] = 'Z') then
       StringGrid01.Canvas.Brush.Color := $008080FF;
 
    StringGrid01.Canvas.FillRect(Rect);
@@ -2273,13 +2273,13 @@ begin
    StringGrid02.Canvas.Font.Color := clBlack;
    StringGrid02.Canvas.Brush.Color := clWhite;
 
-   if (StringGrid2.Cells[ACol, ARow] = 'X') then
+   if (SG2.Cells[ACol, ARow] = 'X') then
       StringGrid02.Canvas.Brush.Color := $00A8FFFF;
 
-   if (StringGrid2.Cells[ACol, ARow] = 'Y') then
+   if (SG2.Cells[ACol, ARow] = 'Y') then
       StringGrid02.Canvas.Brush.Color := $00FFC993;
 
-   if (StringGrid2.Cells[ACol, ARow] = 'Z') then
+   if (SG2.Cells[ACol, ARow] = 'Z') then
       StringGrid02.Canvas.Brush.Color := $008080FF;
 
    StringGrid02.Canvas.FillRect(Rect);
@@ -2294,13 +2294,13 @@ begin
    StringGrid03.Canvas.Font.Color := clBlack;
    StringGrid03.Canvas.Brush.Color := clWhite;
 
-   if (StringGrid3.Cells[ACol, ARow] = 'X') then
+   if (SG3.Cells[ACol, ARow] = 'X') then
       StringGrid03.Canvas.Brush.Color := $00A8FFFF;
 
-   if (StringGrid3.Cells[ACol, ARow] = 'Y') then
+   if (SG3.Cells[ACol, ARow] = 'Y') then
       StringGrid03.Canvas.Brush.Color := $00FFC993;
 
-   if (StringGrid3.Cells[ACol, ARow] = 'Z') then
+   if (SG3.Cells[ACol, ARow] = 'Z') then
       StringGrid03.Canvas.Brush.Color := $008080FF;
 
    StringGrid03.Canvas.FillRect(Rect);
